@@ -2,5 +2,8 @@
     "scripts": {
         "dev": "lite-server",
         "start": "lite-server"
+    },
+    "dependencies": {
+        "cors": "^2.8.5"
     }
 }
