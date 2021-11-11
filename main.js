@@ -27,7 +27,6 @@ function getResults(query){
 }
 
 function displayResults(weather){
-    console.log(weather,"YESSSSSSSSSSSSSsss");
     let city = document.getElementById("city");
         city.innerText = `${weather.name}, ${weather.sys.country}`;
 
@@ -40,7 +39,6 @@ function displayResults(weather){
     temp.innerHTML = `${Math.round(weather.main.temp)}<span>°C</span>`
 
     let lowhigh = document.querySelector(".current .hi-low");
-    console.log(lowhigh);
     lowhigh.innerText = `${Math.round(weather.main.temp_min)}° / ${Math.round(weather.main.temp_max)}°`;
 
     let weatherType = document.querySelector(".current .weather");
