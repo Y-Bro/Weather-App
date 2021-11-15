@@ -11,7 +11,6 @@ function setQuery(event){
     if(event.keyCode == 13)
     {
         getResults(searchbox.value);
-        console.log(searchbox.value);
     }
 }
 
@@ -49,8 +48,6 @@ function dateBuilder (d) {
      
     let months = ["January","Febuary","March","April","May","June","July","August","September","October","November","December"];
     let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    console.log(d.getDay());
-    console.log(d);
     let day = days[d.getDay()];
     let date = d.getDate();
     let month = months[d.getMonth()];
